@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/saveButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="535dp"
+        android:layout_marginBottom="88dp"
+        android:background="@android:drawable/dialog_holo_dark_frame"
+        android:backgroundTint="@color/sky_blue"
+        android:text="Save"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.082"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/blackBar2" />
+
+    <EditText
+        android:id="@+id/weight"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="660dp"
+        android:ems="10"
+        android:hint="weight(kg)"
+        android:inputType="text|textAutoCorrect"
+        android:textSize="24sp"
+        app:layout_constraintHorizontal_bias="0.963"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/time"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="660dp"
+        android:ems="10"
+        android:hint="time (min)"
+        android:inputType="text|textAutoCorrect"
+        android:textSize="24sp"
+        app:layout_constraintHorizontal_bias="0.072"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/blackBar2"
+        android:layout_width="486dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:alpha=".7"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@color/black" />
+
+    <TextView
+        android:id="@+id/prompt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:gravity="center"
+        android:text="Add your work"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/sleeping"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="136dp"
+        android:layout_marginLeft="136dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="131dp"
+        android:layout_marginRight="131dp"
+        android:layout_marginBottom="8dp"
+        android:text="sleeping"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/jogging"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/blackBar2"
+        app:layout_constraintVertical_bias="0.6" />
+
+    <CheckBox
+        android:id="@+id/jogging"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="136dp"
+        android:layout_marginLeft="136dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="144dp"
+        android:layout_marginRight="144dp"
+        android:layout_marginBottom="8dp"
+        android:text="jogging"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/fastjogging"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sleeping" />
+
+    <CheckBox
+        android:id="@+id/fastjogging"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="136dp"
+        android:layout_marginLeft="136dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="85dp"
+        android:layout_marginRight="85dp"
+        android:layout_marginBottom="8dp"
+        android:text="fast jogging"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/walking2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/jogging" />
+
+    <CheckBox
+        android:id="@+id/walking2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="136dp"
+        android:layout_marginLeft="136dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="57dp"
+        android:layout_marginRight="57dp"
+        android:layout_marginBottom="8dp"
+        android:text="walking 2mph"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/walking3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fastjogging" />
+
+    <CheckBox
+        android:id="@+id/walking3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="136dp"
+        android:layout_marginLeft="136dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="57dp"
+        android:layout_marginRight="57dp"
+        android:layout_marginBottom="8dp"
+        android:text="walking 3mph"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/walking3.5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/walking2" />
+
+    <CheckBox
+        android:id="@+id/walking3.5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="136dp"
+        android:layout_marginLeft="136dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="8dp"
+        android:text="walking 3.5mph"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/bicycleslow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/walking3" />
+
+    <CheckBox
+        android:id="@+id/bicycleslow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="136dp"
+        android:layout_marginLeft="136dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginRight="56dp"
+        android:layout_marginBottom="8dp"
+        android:text="bicycling slow"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/bicyclemedium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/walking3.5" />
+
+    <CheckBox
+        android:id="@+id/bicyclemedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="136dp"
+        android:layout_marginLeft="136dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="6dp"
+        android:text="bicycling medium"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/bicyclefast"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bicycleslow" />
+
+    <CheckBox
+        android:id="@+id/bicyclefast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="66dp"
+        android:layout_marginRight="66dp"
+        android:layout_marginBottom="133dp"
+        android:text="bicycling fast"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/weight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/saveButton2"
+        app:layout_constraintTop_toBottomOf="@+id/bicyclemedium" />
+
+</android.support.constraint.ConstraintLayout>
